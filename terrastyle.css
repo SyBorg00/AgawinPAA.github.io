@@ -1,0 +1,375 @@
+
+@font-face{
+    font-family: andyBold;
+    src: url(ANDYB.TTF);
+}
+
+/*For the navigation*/
+
+
+#nav{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    font-size: 20px;
+    margin-left:75px;
+    margin-right: 75px;
+    padding-inline-start: 0px;
+    align-content: center;
+    text-align: center; 
+    height: 50px;
+}
+#nav li{
+    background-color: rgb(124, 155, 255);
+    border-radius: 10px;
+    border-style: outset;
+    border-width: thin;
+    border-collapse: separate;
+    transition: transform .2s;
+    box-sizing: border-box;
+    width: 25%;
+    padding-top: 10px;
+    
+}
+
+#nav li:hover{
+    transform: scale(1.2);
+    border-color: rgb(255, 228, 78);
+    background-color:rgb(255, 228, 78);;
+}
+
+
+#gifs{
+        text-align: center;
+        padding-top: 10px;
+    }
+
+/*For the header*/
+#title{
+    border-radius: 20px;
+    
+}
+/*<----------------------------------General editing section---------------------------->*/
+#gifs{
+    text-align: center;
+    background-image: url('sky-bg.webp');
+    background-size: cover;
+    background-position: center;
+    
+}
+
+body{
+    max-width: 2500px;
+    font-family: andyBold;
+    color: white;
+    text-shadow: 2px 0 #000000, -2px 0 #000000, 0 2px #000000, 0 -2px #000000,
+               1px 1px #000000, -1px -1px #000000, 1px -1px #000000, -1px 1px #000000;
+}
+
+#title{
+    display: block;
+}
+#main{
+    display: block;
+    height: max-content;
+    position: relative;
+}
+
+#main > *{
+    display: flex;
+    align-self: center;
+    height: max-content;
+    margin: 75px;
+    flex-flow: row wrap;
+    flex: 1 100%;
+    background-color: #5a433a;
+    border-radius: 20px;
+    padding: 30px;
+    transition: transform .2s;
+    
+}
+#text1, #text2, #text3, #text4{
+    overflow: auto;
+    flex: 1 15%;
+    padding: 20px;
+    height: 200px;
+    margin-left: 20px;
+    
+    font-size: 24px;
+}
+
+/*Hiding the ugly scrollbar*/
+#text1::-webkit-scrollbar, #text2::-webkit-scrollbar, #text3::-webkit-scrollbar, #text4::-webkit-scrollbar,
+#mode-j::-webkit-scrollbar, #mode-c::-webkit-scrollbar, #mode-e::-webkit-scrollbar, #mode-m::-webkit-scrollbar{
+    display: none;
+}
+
+
+/*making the image also scale*/
+#img1, #img2, #img3, #img4{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+       
+}
+
+/*The title of each container*/
+#head1, #head2, #head3, #head4{
+    width: 100%;
+    margin-bottom: 6px;      
+    border-radius: 10px; 
+    padding-left: 6px;   
+    padding-bottom: 5px;
+    padding-top: 5px;
+    color: rgb(42, 255, 106);
+}
+
+/*Image manipulation*/
+img{
+    transition: transform .2s;
+}
+
+img:hover:not(img.icon){
+    transform: scale(1.02);
+}
+
+img.icon:hover{
+    transform: scale(1.5);
+}
+
+
+img:not(img#journey-logo):not(img#title-img):not(img.icon){
+    border-radius: 8px;
+    border-style:outset;
+}
+#title-img{
+    border-style: none;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+/*Makes the boxes scale on hover a bit fir pezzaz*/
+#main > *:hover:not(div#version):not(div#modes){
+    transform: scale(1.05);
+    border-color: rgb(255, 228, 78);
+    border-style: solid;
+}
+
+/*Header for the game modes section*/
+.mode-hd{
+    width: 100%;
+}
+
+
+
+/*<----------------------------------Specific editing section---------------------------->*/
+#gifs{
+    display:flex;
+    justify-content: center;
+    border-style: outset;
+}
+
+#version, #modes{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+/*Specifically manipulating each container*/
+
+#version{
+    background-image: url('forest-bg.png');
+    background-position: center;
+    border-style: inset;
+
+
+}
+
+#first{
+    background-image: url('Terraria1.0.jpg');
+    background-size: cover;
+    background-position: center;
+    border-style: inset;
+    background-blend-mode: screen;
+    opacity: 0.9;
+}
+
+#second{
+    background-image: url('TerraImage/Terra4.jpg');
+    background-size: cover;
+    background-position: center;
+    border-style: inset;  
+    background-blend-mode: screen;
+    opacity: 0.9;
+}
+
+#third{
+    background-image: url('TerraImage/Terra8.webp');
+    background-size: cover;
+    background-position: center;
+    border-style: inset; 
+    background-blend-mode: screen;
+    opacity: 0.9;
+}
+
+#final{
+    background-image: url('TerraImage/Terra12.jpg');
+    background-size: cover;
+    background-position: center;
+    border-style: inset;
+    background-blend-mode: screen;
+    opacity: 0.9;
+    
+}
+#modes{
+    background-image: url('forest-bg.png');
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    border-style: outset;
+}
+
+#mode-j, #mode-c, #mode-e, #mode-m{
+    background-size: cover;
+    border-radius: 10px;
+    border-style: outset;
+    padding: 50px;
+    justify-content: center;
+    overflow: auto;
+    height: 400px;
+    
+    
+}
+
+.mode-txt{
+    justify-self: center;
+    text-align: center;
+    justify-content: center;
+    
+}
+
+.ss-mode{
+    width: 730px;
+    height: 550px;
+}
+
+
+.foot{
+    height: 20px;
+    width: 100%;
+    margin: 0px;
+    position: absolute;
+    padding-inline-start: 0px;
+}
+
+
+/*Others*/
+ /* Animations*/
+ .active {
+    background-color: #717171;
+  }
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+
+
+@media(max-width: 3000px){
+    #main, #nav, #title{
+        flex: 1;
+        align-self: center;
+    }
+}
+
+@media(max-width: 1000px){
+    #main > * {
+        margin: 20px;
+        
+    }
+}
+
+@media(max-width: 800px){
+
+    #gifs{
+        text-align: center;
+        padding-top: 10px;
+    }
+    
+    #main > * {
+        margin: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 4px;
+        
+    }
+    #text1, #text2, #text3, #text4{
+        flex: 1 100%;
+        font-size:20px;
+        padding: 5px;
+        margin-left: 6px;
+        text-align: center;
+    }
+
+    #head1, #head2, #head3, #head4{
+        margin-bottom: 0px;
+        height: 30px;
+        text-align: center;
+    }
+
+    #img1, #img2, #img3, #img4{
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;       
+    }
+    #gifs{
+        flex: 1;
+        display: flex;
+        border-radius: 4px;
+    }
+    #nav{
+        display: flex;
+        height: 50px;
+    }
+
+    #nav li{
+        width: 50%;
+        text-align: center;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding-top: 10px;
+
+    }
+
+    #mode-j, #mode-c, #mode-e, #mode-m{
+        padding: 20px;
+    }
+
+    .ss-mode{
+        height: auto;
+        width: 60%;
+    }
+
+    
+}
+@media(max-width: 600px){
+
+    img:not(img.icon){
+        flex: 1;
+    }
+     *{
+        flex: 1;
+    }
+}
+
+
+
