@@ -4,32 +4,33 @@
         <link rel = "stylesheet" href = "terrastyle.css">
         <meta name="viewport" content="width=device-width, initial-scale=1" >       
     </head>
-        <body style="background-image: url(Day-BG.gif); background-size: cover; background-repeat: no-repeat;">
+        <body style="background-image: url(BG/day-bg.gif); background-size: cover; background-repeat: no-repeat;">
 
             <!--Header-->
             <header id="title">
-                <a href="https://www.terraria.org/"><img src="Terraria-logo.webp" id="title-img" syle="width: 98%; height: auto;"></a>
+                <a href="https://www.terraria.org/"><img src="TerraImage/Terraria-logo.webp" id="title-img" syle="width: 98%; height: auto;"></a>
             </header>
 
             <!--Navigation System-->
             
             <ul id="nav">
-                <li onclick="scrollAbout()">About</li>
-                <li onclick="scrollVer()"> Version History</li>
-                <li onclick="scrollGame()"> Game Modes</li>
+                <li onclick="goToAbout()">About</li>
+                <li onclick="goToVer()"> Version History</li>
+                <li onclick="goToGame()"> Game Modes</li>
+                <li onclick="goToBoss()"> Bosses</li>
+                <li onclick="goToNPC()"> NPCs</li>
 
                 <script src="terraSlideJS/scroll.js"></script>
             </ul>
             
             <div id="main">
                 
-                
-                
+             
                 <!--About box-->
                 <div id="gifs">
-                    <img src="explore.gif" style="width: 98%; height: auto;" class="gifs fade">
-                    <img src="fight.gif" style="width: 98%; height: auto;" class="gifs fade">
-                    <img src="build.gif" style="width: 98%; height: auto;" class="gifs fade">
+                    <img src="TerraImage/explore.gif" style="width: 98%; height: auto;" class="gifs fade">
+                    <img src="TerraImage/fight.gif" style="width: 98%; height: auto;" class="gifs fade">
+                    <img src="TerraImage/build.gif" style="width: 98%; height: auto;" class="gifs fade">
                     <h1 id="about-txt" style="color: rgb(42, 255, 106);">Build, Fight, and Explore... The Realm of Terraria Awaits you...</h1>
                     <h3 > Terraria is a 2D action-adventure-sandbox game, developed by Re-LOGIC. First released 
                         on windows on 2011 and has since been ported to other platforms. The game consist of exploration,
@@ -37,460 +38,29 @@
     
                         Sold by over 44 million copies by 2022. It has become one of the best-selling video games of all time... <br><br></h3>
                     <script src="terraSlideJS/gifSlides.js"></script>
-                </div> 
-
-                <div id="version"><h1>History of Major Release Versions</h1></div>
-
-
-
-                <!--First box-->
-                <div id="first">
-                    <h1 id="head1">The 1.0 Update [1.0 - 1.1.1]</h1>
-                    <div id="text1">
-                        The first ever release of Terraria. Published on May 11, 2011
-                        As expected from games in their first release, there are only
-                        quite a few items and content to go through. Skeletron 
-                        <img src="TerraIcons/skele.webp"  class="icon"> would
-                        be considered as the final boss of this version. <br><br>
-
-
-                        Since then, Terraria have recieved the 1.1 Update, which 
-                        introduces us to many more stuffs, including the new fabled
-                        <p style="color:rgb(42, 255, 106); display: inline;">
-                        Hard-Mode <img src="TerraIcons/hard-mode.webp" class="icon"></p>
-                        , in order to the player's might with new difficulties
-                        - while at the same time, introducing 4 new bosses to the mix
-                        <img src="TerraIcons/wall.webp" class="icon">
-                        <img src="TerraIcons/destroy.webp"class="icon">
-                        <img src="TerraIcons/skeleprime.webp"class="icon">
-                        <img src="TerraIcons/twin1.webp"class="icon">
-                        <img src="TerraIcons/twin2.webp"class="icon">
-
-                        <br><br><br>
-
-                        <br>
-                        Available Bosses: <br>
-                        <img src="TerraIcons/king.webp" class="icon">
-                        <img src="TerraIcons/eye.webp" class="icon">
-                        <img src="TerraIcons/eater.webp" class="icon">
-                        <img src="TerraIcons/skele.webp" class="icon">
-                        <img src="TerraIcons/wall.webp" class="icon">
-                        <img src="TerraIcons/destroy.webp"class="icon">
-                        <img src="TerraIcons/skeleprime.webp"class="icon">
-                        <img src="TerraIcons/twin1.webp"class="icon">
-                        <img src="TerraIcons/twin2.webp"class="icon">
-                        
-                        <br>
-                        Available NPCS:<br>
-                        <img src="TerraIcons/guide.webp" class="icon">
-                        <img src="TerraIcons/nurse.webp" class="icon">
-                        <img src="TerraIcons/merchant.webp" class="icon">
-                        <img src ="TerraIcons/santa.webp" class="icon">
-                        <img src="TerraIcons/arms-dealer.webp" class="icon"><br>
-
-                        <a href="https://terraria.wiki.gg/wiki/Desktop_version_history"> >> See all version history for full details at the official Terraria wiki </a>
-                        
-
-                        
-                    </div>
-                    <div id="img1">
-                        <div class="terraSlide fade"><img src="TerraImage/Terra1.jpg" style="height: 250px; width: 425px;"></div>
-                        <div class="terraSlide fade"><img src="TerraImage/Terra2.avif" style="height: 250px; width: 425px;"></div>
-                        <div class="terraSlide fade"><img src="TerraImage/Terra3.jpg" style="height: 250px; width: 425px;"></div>
-                        <script src="terraSlideJS/TerraJS.js"></script>
-                        
-                    </div>
+                </div>
+                <div id="modes"><h1>A Quick Summary</h1></div>
+                <div class="examples">               
+                    <img src="TerraImage/terraria-start.png" style="width: 98%; height: auto;">
+                    <h1 id="about-txt" style="color: rgb(42, 255, 106);">Your journey begins here...</h1>
+                    <h3> You will begin your journey in the middle of a wide forest, only having three trusty tools at your disposal - each
+                        with different purpose. Not only that, you will also be accompanied by your very trusty NPC - The Guide, to help
+                        aid you in your journey. What happens next is up to you, whether you can chop down trees and build a shelter for your 
+                        comfort, or go exploring and gather the necessary resources. You might also encounter monsters along the way, so be
+                        careful.
+                    </h3>
                 </div>
 
-
-                <!--Second-->
-                <div id="second">
-                    <h1 id="head2">The 1.2 Update [1.2 - 1.2.4]</h1>
-                    <div id="text2">
-
-                        Following the 1.0 - 1.1 Update comes the 1.2 Update, which features
-                        many more content than before. Introducing to us the first-ever 
-                        crimson biome - a new world evil that can be possibly obtained when
-                        creating a new world. Other than that, the content has expanded as
-                        well, introducing the new 'Hardmode' which also introduces to us the 
-                        Hallow Biome. <br><br>
-                        With new content also comes along with new bosses as well, Introducing
-                        to us with Plantera <img src="TerraIcons/plant.webp" class="icon">
-                        , Brain of Cthulhu <img src="TerraIcons/brain.webp" class="icon">
-                        , Queen Bee <img src="TerraIcons/bee.webp" class="icon">
-                        , Golem <img src="TerraIcons/golem.webp" class="icon">
-                        , and the 
-                        Mobile/Console exclusive boss, Ocram 
-                        <img src="TerraIcons/ocram.webp" class="icon">
-                        <br><br>
-
-                        It also comes along with brand new NPCs to aid you on your Terraria 
-                        journey, and make your world a bit more alive than ever.<br><br>
-
-                        The version ended with 1.2.4 before another big one approached near 2015...
-
-                        <br><br><br>
-                        Available Bosses: <br>
-                        <img src="TerraIcons/king.webp" class="icon">
-                        <img src="TerraIcons/eye.webp" class="icon">
-                        <img src="TerraIcons/eater.webp" class="icon">
-                        <img src="TerraIcons/brain.webp" class="icon">
-                        <img src="TerraIcons/bee.webp" class="icon">
-                        <img src="TerraIcons/skele.webp"class="icon">
-                        <img src="TerraIcons/wall.webp"class="icon">
-                        <img src="TerraIcons/destroy.webp" class="icon">
-                        <img src="TerraIcons/skeleprime.webp" class="icon">
-                        <img src="TerraIcons/twin1.webp" class="icon">
-                        <img src="TerraIcons/twin2.webp" class="icon">
-                        <img src="TerraIcons/plant.webp" class="icon">
-                        <img src="TerraIcons/golem.webp" class="icon">
-                        <img src="TerraIcons/ocram.webp" class="icon">
-
-                        
-                        
-                        <br>
-                        Available NPCS:<br>
-                        <img src="TerraIcons/guide.webp" class="icon">
-                        <img src="TerraIcons/nurse.webp" class="icon">
-                        <img src="TerraIcons/merchant.webp" class="icon">
-                        <img src ="TerraIcons/santa.webp" class="icon">
-                        <img src="TerraIcons/arms-dealer.webp" class="icon">
-                        <img src="TerraIcons/angler.webp" class="icon">
-                        <img src="TerraIcons/stylist.webp" class="icon">
-                        <img src="TerraIcons/travel.webp" class="icon">
-                        <img src="TerraIcons/doctor.webp" class="icon">
-                        <img src="TerraIcons/paint.webp" class="icon">
-                        <img src="TerraIcons/party.webp" class="icon">
-                        <img src="TerraIcons/pirate.webp" class="icon">
-                        <img src="TerraIcons/steam.webp" class="icon">
-                        <img src="TerraIcons/dye.webp" class="icon">
-                        <img src="TerraIcons/truffle.webp" class="icon">
-                        <img src="TerraIcons/cyborg.webp" class="icon">
-                        <br>
-
-                        <a href="https://terraria.wiki.gg/wiki/Desktop_version_history"> >> See all version history for full details at the official Terraria wiki </a>
-
-
-                    </div>
-                    <div id="img2">
-                        <div class="terraSlideSecond fade"><img src="TerraImage/Terra5.jpg" style="height: 250px; width: 425px;"></div>
-                        <div class="terraSlideSecond fade"><img src="TerraImage/Terra6.jpg" style="height: 250px; width: 425px;"></div>
-                        <div class="terraSlideSecond fade"><img src="TerraImage/Terra7.jpg" style="height: 250px; width: 425px;"></div>
-                        <script src="terraSlideJS/TerraSecondJS.js"></script>
-                    </div>
+                <div class="examples">
+                    <img src="TerraImage/terraria-challenge.png" style="width: 98%; height: auto;">
+                    <h1 id="about-txt" style="color: rgb(255, 55, 55);">Beware of the night...</h1>
+                    <h3>
+                        The night can be a dangerous place for beginners, as more dangerous monsters would appear at this certain time 
+                        of the day. Either shred through the horde of monsters to explore deeper, or stay at the comfort of your shelter,
+                        for you have the choice to do so... Once sunrise arrives, a new day of productivity will come towards you once more...
+                    </h3>
                 </div>
 
-
-                <!--Third-->
-                <div id="third">
-                    <h1 id="head3">The 1.3 Update [1.3.0 - 1.3.5.3]</h1>
-                    <div id="text3">
-                        Perhaps one of the biggest content update that Terraria has recieved
-                        from all of its history. Introducing a plethora of new events to the
-                        mix, and jst like with every update... NEW BOSSES, MORE ITEMS, IMPROVED
-                        GRAPHICS, and so much more...    <br><br>
-
-                        It is sad however that Ocram has now been removed from this version. But
-                        say hello to the NEW FINAL BOSS to challenge to... The Moon Lord  <img src="TerraIcons/lord.webp" class="icon">
-                        , which
-                        can only be beaten by defeating the lunatic cultist <img src="TerraIcons/lunatic.webp" class="icon">
-                         and the four celestial pillars 
-                         <img src="TerraIcons/solar.webp" class="icon">
-                         <img src="TerraIcons/stardust.webp" class="icon">
-                         <img src="TerraIcons/vortex.webp" class="icon">
-                        <img src="TerraIcons/nebula.webp" class="icon">
-                         <br><br>
-
-                        And while at it, how about experiencing about a new mode to spice up your
-                        playthrough by introducing the new mode: <p style="color: rgb(255, 169, 40); display:inline">Expert Mode. <img src ="TerraIcons/Expert_Mode.webp" class="icon"></p>
-                        <script src="terraSlideJS/scroll.js"></script>
-                        
-                        <br><br><br>
-                        Available Bosses: <br>
-                        <img src="TerraIcons/king.webp" class="icon">
-                        <img src="TerraIcons/eye.webp" class="icon">
-                        <img src="TerraIcons/eater.webp" class="icon">
-                        <img src="TerraIcons/brain.webp" class="icon">
-                        <img src="TerraIcons/bee.webp" class="icon">
-                        <img src="TerraIcons/skele.webp" class="icon">
-                        
-                        <img src="TerraIcons/wall.webp" class="icon">
-                        <img src="TerraIcons/destroy.webp" class="icon">
-                        <img src="TerraIcons/skeleprime.webp" class="icon">
-                        <img src="TerraIcons/twin1.webp" class="icon">
-                        <img src="TerraIcons/twin2.webp" class="icon">
-                        <img src="TerraIcons/plant.webp" class="icon">
-                        <img src="TerraIcons/duke.webp" class="icon">
-                        <img src="TerraIcons/golem.webp" class="icon">
-                        <img src="TerraIcons/lunatic.webp" class="icon">
-                        <img src="TerraIcons/solar.webp" class="icon">
-                        <img src="TerraIcons/stardust.webp" class="icon">
-                        <img src="TerraIcons/vortex.webp" class="icon">
-                        <img src="TerraIcons/nebula.webp" class="icon">
-                        <img src="TerraIcons/lord.webp" class="icon">
-                        
-
-                        
-                        
-                        <br>
-                        Available NPCS:<br>
-                        <img src="TerraIcons/guide.webp" class="icon">
-                        <img src="TerraIcons/nurse.webp" class="icon">
-                        <img src="TerraIcons/merchant.webp" class="icon">
-                        <img src ="TerraIcons/santa.webp" class="icon">
-                        <img src="TerraIcons/arms-dealer.webp" class="icon">
-                        <img src="TerraIcons/angler.webp" class="icon">
-                        <img src="TerraIcons/stylist.webp" class="icon">
-                        <img src="TerraIcons/travel.webp" class="icon">
-                        <img src="TerraIcons/doctor.webp" class="icon">
-                        <img src="TerraIcons/paint.webp" class="icon">
-                        <img src="TerraIcons/party.webp" class="icon">
-                        <img src="TerraIcons/pirate.webp" class="icon">
-                        <img src="TerraIcons/steam.webp" class="icon">
-                        <img src="TerraIcons/dye.webp" class="icon">
-                        <img src="TerraIcons/truffle.webp" class="icon">
-                        <img src="TerraIcons/cyborg.webp" class="icon">
-                        <br>
-                        <a href="https://terraria.wiki.gg/wiki/Desktop_version_history"> >> See all version history for full details at the official Terraria wiki </a>
-
-
-
-                    </div>
-                    <div id="img3">
-                        <div class="TerraSlideThird fade"><img src="TerraImage/Terra9.jpg" style="height: 250px; width: 425px;"></div>
-                        <div class="TerraSlideThird fade"><img src="TerraImage/Terra10.jpg" style="height: 250px; width: 425px;"></div>
-                        <div class="TerraSlideThird fade"><img src="TerraImage/Terra11.jpg" style="height: 250px; width: 425px;"></div>
-                        <script src="terraSlideJS/TerraThirdJS.js"></script>
-                    </div>
-
-                </div>
-
-                <!--Fourth-->
-                <div id="final">
-                    <h1 id="head4">Terraria: Journey's End [1.4 - 1.4.4.9]</h1>
-                    <div id="text4">
-                        And now we have reached at the 'End' of the journey, as the developers
-                        would then release their 'final' update to the game... Simply named...<br>
-
-                        <img src="end-logo.webp"style="width: 400px; height: 150px;" id="journey-logo"><br><br>
-
-                        While not as much as big as the 1.3 update, this version still manage
-                        to introduce us with much content than ever. Which means, more items,
-                        new bosses, new gamemodes, and much more...<br><br>
-
-                        Be a collector and experience the fun of <p style="color:rgb(255, 100, 173); display:inline;">journey mode
-                        <img src="TerraIcons/Journey_Mode.webp" class="icon"></p>
-                        . A mode that makes 
-                        it similar to the likes of Minecraft's Creative Mode... just that you have to EARN those 
-                        first... Hence the name: Journey Mode<br><br>
-
-                        Or be a challenger and experience the new Difficulty of <p style="color:rgb(255, 55, 55); display:inline;">Master Mode
-                        <img src="TerraIcons/Master_Mode.webp" class="icon"></p>
-                        ,increasing the difficulty by a bit much more... Or if you are still 
-                        hungry for a challenge, try to enter a secret mode that can only be
-                        accessed... if are 'worthy' enough.<br><br>
-
-                        Or just chill for a while and play a nice game of golf for once...<br>
-                        <img src = "terraria-golf.webp">
-                        <br><br>
-
-                        An update history full of Quality of Life changes, as well as collaborations from
-                        other games - as a way of commemorate players that have come a long journey since
-                        the beginning.
-
-                        <br><br><br>
-                        Available Bosses: <br>
-                        <img src="TerraIcons/king.webp" class="icon">
-                        <img src="TerraIcons/eye.webp" class="icon">
-                        <img src="TerraIcons/eater.webp" class="icon">
-                        <img src="TerraIcons/brain.webp" class="icon">
-                        <img src="TerraIcons/bee.webp" class="icon">
-                        <img src="TerraIcons/skele.webp" class="icon">
-                        <img src="TerraIcons/deer.webp" class="icon">
-                        <img src="TerraIcons/wall.webp" class="icon">
-                        <img src ="TerraIcons/queen.webp" class="icon">
-                        <img src="TerraIcons/destroy.webp" class="icon">
-                        <img src="TerraIcons/skeleprime.webp" class="icon">
-                        <img src="TerraIcons/twin1.webp" class="icon">
-                        <img src="TerraIcons/twin2.webp" class="icon">
-                        <img src="TerraIcons/plant.webp" class="icon">
-                        <img src="TerraIcons/golem.webp" class="icon">
-                        <img src="TerraIcons/empress.webp" class="icon">
-                        <img src="TerraIcons/lunatic.webp" class="icon">
-                        <img src="TerraIcons/solar.webp" class="icon">
-                        <img src="TerraIcons/stardust.webp" class="icon">
-                        <img src="TerraIcons/vortex.webp" class="icon">
-                        <img src="TerraIcons/nebula.webp" class="icon">
-                        <img src="TerraIcons/lord.webp" class="icon">
-                        
-
-                        
-                        
-                        <br>
-                        Available NPCS:<br>
-                        <img src="TerraIcons/guide.webp" class="icon">
-                        <img src="TerraIcons/nurse.webp" class="icon">
-                        <img src="TerraIcons/merchant.webp" class="icon">
-                        <img src ="TerraIcons/santa.webp" class="icon">
-                        <img src="TerraIcons/arms-dealer.webp" class="icon">
-                        <img src="TerraIcons/angler.webp" class="icon">
-                        <img src="TerraIcons/stylist.webp" class="icon">
-                        <img src="TerraIcons/travel.webp" class="icon">
-                        <img src="TerraIcons/doctor.webp" class="icon">
-                        <img src="TerraIcons/paint.webp" class="icon">
-                        <img src="TerraIcons/party.webp" class="icon">
-                        <img src="TerraIcons/pirate.webp" class="icon">
-                        <img src="TerraIcons/steam.webp" class="icon">
-                        <img src="TerraIcons/dye.webp" class="icon">
-                        <img src="TerraIcons/truffle.webp" class="icon"> 
-                        <img src="TerraIcons/cyborg.webp" class="icon">
-                        <img src ="TerraIcons/princess.webp" class="icon"><br>
-                        <a href="https://terraria.wiki.gg/wiki/Desktop_version_history"> >> See all version history for full details at the official Terraria wiki </a>
-                        <br>
-
-
-
-                    </div>
-                    <div id="img4">
-                        <div class="TerraSlideFourth fade"><img src="TerraImage/Terra13.jpg"style="height: 250px; width: 425px; " ></div>
-                        <div class="TerraSlideFourth fade"><img src="TerraImage/Terra14.jpg"style="height: 250px; width: 425px; " ></div>
-                        <div class="TerraSlideFourth fade"><img src="TerraImage/Terra15.jpg"style="height: 250px; width: 425px; " ></div>
-                        <div class="TerraSlideFourth fade"><img src="TerraImage/Terra16.jpg"style="height: 250px; width: 425px; " ></div>
-                        <script src="terraSlideJS/TerraFourthJS.js"></script>
-
-                        
-                    </div>
-                </div>
-
-
-
-                <div id="modes"><h1>Game Modes</h1></div>
-
-
-                <!-- Journey Mode-->
-                <div id="mode-j" style="background-image: url('hallow-bg.webp'); background-position: center; background-size: cover;">
-
-                    <h1 style="color:rgb(255, 100, 173)" class="mode-hd">Journey Mode</h1>
-
-                    <div class="mode-txt">
-                    <h2 style="color:rgb(255, 100, 173)">"With great power comes great responsibility"</h2><br>
-
-                    For those who have a habit of collecting stuffs, or have been a fan of Minecraft Creative
-                    Mode, this mode is just for you. On world creation, select <img src="TerraIcons/Journey_Mode.webp" class="icon">
-                    and you'll be good to go.<br><br>
-
-                    <img src="ex-journey.png" class="ss-mode">
-                    <p style="color:rgb(255, 100, 173)">PS: Must require a journey mode character to access</p><br>
-                    Considered to be the "creative mode" of Terraria, players can experience the full content
-                    of the game without having to overcome challenges. Allowing the player a wide array of 
-                    customization options during gameplay, including duplication of items, modification of time and weather,
-                     and difficulty sliders.<br><br>
-
-                     <img src="jounreyss1.png"><br>
-
-                     <h2 style="color:rgb(255, 100, 173)">Control how the game flows for you... like a god of this world.</h2>
-    
-                    <br>
-                    </div>
-
-                </div>
-
-                <!-- Classic Mode-->
-                <div id="mode-c" style ="background-image: url('forest-2.webp'); background-position: center; background-size: cover; ">
-
-                    <h1 class="mode-hd">Classic Mode</h1>
-                    <div class="mode-txt">
-
-                        <h2>"Your Journey Begins..."</h2><br><br><br>
-
-                        The standard difficulty for all Terrarians old and new. Just click on
-                        the <img src="TerraIcons/Classic_Mode.png" class="icon"> on world creation, and your first journey will soon begin.<br><br>
-
-                        <img src="ex-classic.png" class="ss-mode"><br>
-                        A difficulty mode that is recommended for new players who wants to explore
-                        the game while facing challenges along the way...
-                        <br>
-                    </div>
-                </div>
-                <!-- Expert Mode-->
-                <div id="mode-e" style="background-image: url('corruption-bg.webp'); background-position: center; background-size: cover;">
-
-                    <h1 style="color:rgb(255, 179, 80)" class="mode-hd">Expert Mode</h1>
-
-                    <div class="mode-txt">
-
-
-                        <h2 style="color:rgb(255, 179, 80)">"Fortune & Glory, Kid."</h2><br>
-
-                        Step up to the challenge and face Expert Mode in your journey. Just select <img src="TerraIcons/Expert_Mode.webp" class="icon">
-                        on world creation and prepare for what is to come in your way<br><br>
-
-                        <img src="ex-expert.png" class="ss-mode"><br>
-
-                        Introducing new boss patterns, and deadlier enemies; this will
-                        make you step up your gameplay even more, while at the same time, rewarding you
-                        with great loots to collect.<br><br>
-                        <img src="Bag/king.webp" class="icon">
-                        <img src="Bag/eye.webp" class="icon">
-                        <img src="Bag/eow.webp" class="icon">
-                        <img src="Bag/brain.webp" class="icon">
-                        <img src="Bag/skele.webp" class="icon">
-                        <img src="Bag/deer.webp" class="icon">
-                        <img src="Bag/wof.webp" class="icon">
-                        <img src="Bag/queen.webp" class="icon">
-                        <img src="Bag/twin.webp" class="icon">
-                        <img src="Bag/skeleprime.webp" class="icon">
-                        <img src="Bag/destroy.webp" class="icon">
-                        <img src="Bag/plant.webp" class="icon">
-                        <img src="Bag/golem.webp" class="icon">
-                        <img src="Bag/empress.webp" class="icon">
-                        <img src="Bag/lord.webp" class="icon"><br><br>
-
-
-                        <h2 style="color:rgb(255, 179, 80)">So... are you up to to the challenge?</h2>
-                    </div>
-                </div>
-
-                <!--Master Mode-->
-                <div id="mode-m" style="background-image: url('crimson-bg.webp'); background-position: center; background-size: cover;">
-                    <h1 style="color:rgb(255, 55, 55)" class="mode-hd">Master Mode</h1>
-                    <div class="mode-txt">
-                        <h2 style="color:rgb(255, 55, 55)">"Game over man, game over!"</h2>
-                        
-                        <br><br>
-
-                        Expert mode still not enough for you? Then let us introduce Master Mode for you. Just click
-                        on <img src="TerraIcons/Master_Mode.webp" class="icon"> and prepare for the worst...<br><br>
-
-                        <img src="ex-master.png" class="ss-mode"><br>
-
-                        <h3 style="color:rgb(255, 55, 55)">MORE HP, MORE DAMAGE, MORE BRUTALITY THAN EVER!!</h3><BR><br>
-
-                        
-                        Conquer and earn majestic trophies of fallen foes!!<br><br>
-                        <img src="Trophy/king.webp" class="icon">
-                        <img src="Trophy/eye.webp" class="icon">
-                        <img src="Trophy/eat.webp" class="icon">
-                        <img src="Trophy/brain.webp" class="icon">
-                        <img src="Trophy/skele.webp" class="icon">
-                        <img src="Trophy/deer.webp" class="icon">
-                        <img src="Trophy/wof.webp" class="icon">
-                        <img src="Trophy/queen.webp" class="icon">
-                        <img src="Trophy/twin.webp" class="icon">
-                        <img src="Trophy/skeleprime.webp" class="icon">
-                        <img src="Trophy/destroy.webp" class="icon">
-                        <img src="Trophy/plant.webp" class="icon">
-                        <img src="Trophy/golem.webp" class="icon">
-                        <img src="Trophy/empress.webp" class="icon">
-                        <img src="Trophy/cultist.webp" class="icon">
-                        <img src="Trophy/lord.webp" class="icon"><br><br>
-
-                        
-                        <h2 style="color:rgb(255, 55, 55)">"Can you survive the hellscape that is Master Mode?"</h2>
-
-                    </div>
-                </div>
-     
             </div>
 
             
